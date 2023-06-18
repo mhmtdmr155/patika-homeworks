@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="14 .odev.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>kodluyoruz-ödev</title>
+</head>
+<style>
+    .body {
+    background-color:rgb(27, 26, 26);
+}
+
+.kodluyoruz {
+    color: chocolate;
+}
+
+.name {
+    color: chocolate;
+}
+
+.date {
+    color: chocolate;
+}
+
+.ınfo{
+    color: chocolate;
+}
+</style>
+
+<body class="body" >
+    <h1 class="kodluyoruz text-center" > <strong>KODLUYORUZ!</strong> </h1>
+    <br>
+    <h2 class="name text-center" >
+        Merhaba, <strong class="new-name">Mehmet</strong>  Hoş geldin!
+    </h2>
+
+    <h2 class="date text-center" >
+        01:08:16
+    </h2> <br>
+    <h3 class=" ınfo text-center" >
+        tarihinde kodluyoruz Frontend Web Development Patikası'nın Javascript bölümü 1. ödevindesiniz.
+    </h3>
+</body>
+</html>
+
+<script>
+    let nameInfo = prompt("Lütfen isminizi giriniz");
+document.getElementsByClassName("new-name")[0].innerHTML = nameInfo;
+
+document.getElementsByClassName("date")[0].innerHTML = new Date().toLocaleString();
+
+</script>
